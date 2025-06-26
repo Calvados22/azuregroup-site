@@ -1,0 +1,101 @@
+/* src/components/FloatingMessageButton.css */
+
+.floating-container {
+  position: fixed;
+  bottom: 80px; /* Adjust this value as needed */
+  left: 16px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column-reverse; /* So the toggle button stays at the bottom */
+  align-items: center;
+  gap: 10px;
+}
+
+/* Toggle button */
+.toggle-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #000000;
+}
+
+/* Container of contact buttons */
+.floating-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.floating-buttons.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+/* Each icon */
+.floating-icon {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, color 0.2s;
+  border: 1px solid #ddd;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+}
+
+.floating-icon.phone:hover {
+  color: #2563eb;
+}
+
+.floating-icon.whatsapp:hover {
+  color: #22c55e;
+}
+
+.floating-icon.email:hover {
+  color: #ef4444;
+}
+
+.floating-icon.linkedin:hover {
+  color: #0a66c2;
+}
+/* Adjust for small screens */
+@media (max-width: 768px) {
+  .floating-container {
+    bottom: 20px; /* lower the distance from the bottom */
+    left: 19px;
+    transform: translateY(0); /* Ensure it's not shifting */
+  }
+
+  .toggle-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+

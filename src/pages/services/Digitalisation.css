@@ -1,0 +1,88 @@
+.digitalisation-container {
+  padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.digitalisation-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.digitalisation-banner {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.digitalisation-header h1 {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.digital-section {
+  margin: 40px 0;
+}
+
+.digital-section h2,
+.digital-section h3 {
+  color: #0074b7;
+  margin-bottom: 10px;
+}
+
+.digital-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.digital-cta {
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #0074b7;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #005a91;
+}
+
+@media (max-width: 768px) {
+  .digitalisation-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .digital-section h2, .digital-section h3 {
+    font-size: 1.2rem;
+  }
+}

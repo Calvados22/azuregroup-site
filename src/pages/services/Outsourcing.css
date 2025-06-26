@@ -1,0 +1,104 @@
+.outsourcing-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+.outsourcing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.outsourcing-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.outsourcing-header h1 {
+  font-size: 2.8rem;
+  color: #007BFF;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #495057;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.outsourcing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.outsourcing-card {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 280px;
+  transition: box-shadow 0.3s ease;
+}
+
+.outsourcing-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.icon-wrapper {
+  font-size: 2.8rem;
+  color: #007BFF;
+}
+
+.outsourcing-card h2 {
+  font-size: 1.5rem;
+  color: #007BFF;
+  margin-bottom: 0.5rem;
+}
+
+.outsourcing-card p {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.outsourcing-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.75rem 2.25rem;
+  font-size: 1.125rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .outsourcing-cards {
+    grid-template-columns: 1fr;
+  }
+}

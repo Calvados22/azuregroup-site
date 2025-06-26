@@ -1,0 +1,148 @@
+/* src/pages/APropos.css */
+
+.apropos-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.intro-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Section content blocks */
+.about-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 2rem;
+}
+
+.about-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #facc15;
+  margin-top: 0.5rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  color: #333333;
+  line-height: 1.7;
+}
+
+.about-text strong {
+  color: #facc15;
+}
+
+/* Contact section */
+.contact-section {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section a {
+  display: inline-block;
+  background-color: #facc15;
+  color: #000000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section a:hover {
+  background-color: #000000;
+  color: #facc15;
+  border: 2px solid #facc15;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .intro-section p,
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+.intro-frame {
+  border: 3px solid #facc15;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: 0 auto;
+}
