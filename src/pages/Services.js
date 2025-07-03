@@ -23,7 +23,7 @@ AOS.init();
 // Liste des services
 const services = [
   { name: 'Énergie Renouvelable', image: energieImg, link: 'https://www.azureenregy.ma' },
-  { name: 'ICT', image: ictImg, link: '/services/ict' },
+  { name: 'ICT', image: ictImg, link: '/services/ICT' },
   { name: 'OUTSOURCING', image: outsourcingImg, link: '/services/outsourcing' },
   { name: 'CYBERSÉCURITÉ PHYSIQUE', image: securiteImg, link: '/services/SecurityPhysique' },
   { name: 'DIGITALISATION', image: digitalisationImg, link: '/services/Digitalisation' },

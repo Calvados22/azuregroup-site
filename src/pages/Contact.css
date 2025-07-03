@@ -99,3 +99,56 @@
   margin-top: 0.25rem;
   display: block;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-overlay {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+    transform: none;
+    border-radius: 16px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}

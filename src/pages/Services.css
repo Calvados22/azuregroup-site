@@ -51,5 +51,47 @@
   color: #333;
 }
 
-/* ====== Grid Styles ====== */
+/* ====== Responsive Enhancements ====== */
 
+@media (max-width: 992px) {
+  .services-frame {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 2rem 1rem;
+  }
+
+  .services-frame h2 {
+    font-size: 2rem;
+  }
+
+  .services-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .slider-hero-img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-frame {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .services-frame h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+  }
+
+  .slider-hero-img {
+    max-height: 300px;
+  }
+}

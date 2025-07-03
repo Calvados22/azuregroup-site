@@ -1,3 +1,4 @@
+/* Base styles (unchanged) */
 .iloq-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -233,17 +234,103 @@
   background-color: #717171;
 }
 
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .iloq-hero h1,
   .iloq-s50-section h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
+  }
+
+  .iloq-hero p {
+    font-size: 1.1em;
+  }
+
+  .s50-content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iloq-hero {
+    flex-direction: column;
+    padding: 50px 20px;
+    min-height: auto;
+  }
+
+  .iloq-hero h1 {
+    font-size: 2em;
   }
 
   .iloq-hero p {
     font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .s50-content {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .s50-description,
+  .s50-image {
+    flex: unset;
+    min-width: 100%;
+  }
+
+  .iloq-use-cases h2 {
+    font-size: 2em;
+  }
+
+  .use-case-slider {
+    height: 300px;
+  }
+
+  .use-case-card h3 {
+    font-size: 2em;
+  }
+
+  .slider-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  .slider-button.prev {
+    left: 5px;
+  }
+
+  .slider-button.next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .iloq-hero h1 {
+    font-size: 1.6em;
+  }
+
+  .iloq-hero p {
+    font-size: 0.9em;
+  }
+
+  .iloq-s50-section {
+    padding: 30px 15px;
+  }
+
+  .iloq-s50-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+  }
+
+  .use-case-slider {
+    height: 250px;
+  }
+
+  .use-case-card h3 {
+    font-size: 1.4em;
   }
 }

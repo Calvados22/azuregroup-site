@@ -5,7 +5,6 @@
   background-color: #ffffff;
   padding-bottom: 4rem;
   scroll-behavior: smooth;
-  
 }
 
 /* ====== SLIDER ====== */
@@ -17,6 +16,12 @@
   overflow: hidden;
   animation: fadeIn 1s ease-in-out;
   height: 840px;
+}
+
+@media (max-width: 768px) {
+  .accueil-slider {
+    height: 400px;
+  }
 }
 
 @keyframes fadeIn {
@@ -76,14 +81,14 @@
 }
 
 .slider-fixed-overlay h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
   color: #FFD700;
 }
 
 .slider-fixed-overlay p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto;
   color: #ffffff;
@@ -141,6 +146,13 @@
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .framed-text {
+    padding: 20px;
+    border-radius: 60px;
+  }
+}
+
 .framed-box:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
@@ -151,20 +163,18 @@
   position: relative;
   width: 100%;
   padding: 4rem 2rem;
-  background-image: url('../media/nosservices.jpg'); /* remplace par ton image réelle si besoin */
+  background-image: url('../media/nosservices.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 20px; /* optionnel pour un arrondi élégant */
+  border-radius: 20px;
   overflow: hidden;
 }
-
-
 
 .accueil-services::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* ombrage léger pour lisibilité */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
@@ -177,7 +187,6 @@
   text-align: center;
 }
 
-/* Grid layout for services */
 .services-grid {
   position: relative;
   z-index: 1;
@@ -195,15 +204,16 @@
 @media (min-width: 992px) {
   .services-grid { grid-template-columns: repeat(3, 1fr); }
 }
-/* Individual service card with animation */
+
 .service-card {
   background-color: transparent;
   box-shadow: none;
-  color: rgb(0, 0, 0); /* or some color visible over background */
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-  background-color: rgba(255, 255, 255, 0.25); /* a little stronger on hover */
+  background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
@@ -222,18 +232,6 @@
   font-weight: bold;
   text-align: center;
   border-radius: 0 0 10px 10px;
-}
-
-@media (min-width: 600px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* ====== CLIENT TESTIMONIALS SECTION ====== */
@@ -286,7 +284,6 @@
   font-size: 1.2rem;
 }
 
-/* Client name style */
 .avis-card .avis-name {
   font-weight: bold;
   font-size: 1.1rem;
@@ -366,5 +363,10 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  
+}
+
+@media (max-width: 768px) {
+  .video-background {
+    height: 400px;
+  }
 }

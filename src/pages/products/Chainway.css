@@ -1,15 +1,15 @@
 /* HERO VIDEO FULL WIDTH */
 .chainway-hero-video-wrapper {
   width: 100%;
-  height: 700px;  /* Instead of max-height, set a fixed height */
+  height: 700px; /* Fixed height for large screens */
   overflow: hidden;
 }
 
 .chainway-hero-video {
   width: 100%;
-  height: 100%;  /* Fill the wrapper height */
+  height: 100%; /* Fill wrapper */
   object-fit: cover;
-  object-position: center 30%; /* Shift focus down, adjust % as needed */
+  object-position: center 30%; /* Adjust focus */
   display: block;
 }
 
@@ -59,6 +59,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   flex: 1 1 45%;
   max-width: 600px;
+  box-sizing: border-box;
 }
 
 .product-card img {
@@ -90,6 +91,7 @@
 
 .product-card ul {
   margin: 5px 0 15px 20px;
+  padding-left: 0;
 }
 
 .product-card ul li {
@@ -99,6 +101,7 @@
 /* COMPARATIF */
 .comparatif {
   margin: 40px 0 20px;
+  overflow-x: auto; /* Allow horizontal scroll on small screens */
 }
 
 .comparatif h3 {
@@ -111,6 +114,7 @@
   width: 100%;
   border-collapse: collapse;
   text-align: center;
+  min-width: 600px; /* Minimum width for table on smaller devices */
 }
 
 .comparatif th,
@@ -144,25 +148,21 @@
 
 .chainway-contact button:hover {
   background-color: #005f99;
+  transform: scale(1.05);
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .chainway-hero-video-wrapper {
-    max-height: 350px;
+    height: 500px;
   }
 
   .chainway-hero-text h1 {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
   .chainway-hero-text p {
     font-size: 1em;
-  }
-
-  .chainway-products-parallel {
-    flex-direction: column;
-    align-items: center;
   }
 
   .product-card {
@@ -171,8 +171,37 @@
   }
 }
 
+@media (max-width: 768px) {
+  .chainway-hero-video-wrapper {
+    height: 350px;
+  }
+
+  .chainway-products-parallel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chainway-contact button {
+    font-size: 1em;
+    padding: 12px 28px;
+  }
+}
+
 @media (max-width: 480px) {
   .chainway-hero-video-wrapper {
-    max-height: 250px;
+    height: 250px;
+  }
+
+  .chainway-hero-text h1 {
+    font-size: 1.5em;
+  }
+
+  .chainway-hero-text p {
+    font-size: 0.9em;
+  }
+
+  .product-card {
+    max-width: 100%;
+    padding: 15px;
   }
 }

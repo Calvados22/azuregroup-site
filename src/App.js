@@ -15,7 +15,7 @@ import Academy from './pages/services/Academy';
 import Chainway from './pages/products/Chainway';
 import Iloq from './pages/products/Iloq';
 import SecurityPhysique from './pages/services/SecurityPhysique';
-
+import ICT from './pages/services/ICT';
 function App() {
   return (
     <>
@@ -32,6 +32,7 @@ function App() {
             <Route path="/services/digitalisation" element={<Digitalisation />} />
             <Route path="/services/outsourcing" element={<Outsourcing />} />
             <Route path="/services/SecurityPhysique" element={<SecurityPhysique />} />
+            <Route path="/services/ICT" element={<ICT />} />
             <Route path="/services/academy" element={<Academy />} />
             <Route path="/products/chainway" element={<Chainway />} />
             <Route path="/products/iloq" element={<Iloq />} />

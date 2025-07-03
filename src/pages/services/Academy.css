@@ -1,3 +1,4 @@
+/* ========= BASE STYLES ========= */
 .academy-container {
   max-width: 1600px;
   margin: 0 auto;
@@ -154,43 +155,19 @@
   box-shadow: 0 10px 30px rgba(0, 86, 179, 0.7);
 }
 
-/* Responsive Design */
-
-@media (max-width: 1024px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .iso-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .academy-section {
-    padding: 2rem 1.5rem;
-  }
-
-  .academy-header h1 {
-    font-size: 2.2rem;
-  }
-}
+/* ========= ISO DETAILS ========= */
 .iso-details {
   background-color: #e7f0ff;
   border: 2px solid #0056b3;
   border-radius: 16px;
   padding: 1.8rem 2.2rem;
-  margin: 2.5rem auto 0 auto; /* centers horizontally */
+  margin: 2.5rem auto 0 auto;
   max-width: 700px;
   color: #003366;
   font-weight: 600;
   font-size: 1.15rem;
   box-shadow: 0 4px 14px rgba(0, 86, 179, 0.15);
-  text-align: left; /* keeps list aligned left inside the container */
+  text-align: left;
 }
 
 .iso-details ul {
@@ -206,7 +183,6 @@
   line-height: 1.5;
 }
 
-/* Custom bullet as small blue circle */
 .iso-details ul li::before {
   content: '';
   position: absolute;
@@ -216,4 +192,87 @@
   height: 10px;
   background-color: #0056b3;
   border-radius: 50%;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .iso-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academy-section {
+    padding: 2rem;
+  }
+
+  .academy-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-desc {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .academy-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .academy-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .academy-section {
+    padding: 1.5rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .iso-details {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .academy-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .academy-intro {
+    font-size: 1rem;
+  }
+
+  .academy-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+  }
+
+  .contact-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .iso-details {
+    font-size: 0.95rem;
+  }
 }
