@@ -15,12 +15,12 @@
   margin: 0.5rem auto;
   overflow: hidden;
   animation: fadeIn 1s ease-in-out;
-  height: 840px;
+  height: 90vh;
 }
 
 @media (max-width: 768px) {
   .accueil-slider {
-    height: 400px;
+    height: 50vh;
   }
 }
 
@@ -48,15 +48,13 @@
   }
 }
 
-/* Overlay text on slider */
+/* ====== SLIDER OVERLAY TEXT ====== */
 .slider-fixed-overlay {
   position: relative;
   z-index: 1;
   color: white;
   text-align: center;
-  padding-top: 10vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 16px;
   width: 80%;
@@ -98,6 +96,7 @@
   .slider-fixed-overlay h1 {
     font-size: 3rem;
   }
+
   .slider-fixed-overlay p {
     font-size: 1.3rem;
   }
@@ -107,6 +106,7 @@
   .slider-fixed-overlay h1 {
     font-size: 3.5rem;
   }
+
   .slider-fixed-overlay p {
     font-size: 1.4rem;
   }
@@ -132,6 +132,7 @@
   }
 }
 
+/* FRAMED TEXT */
 .framed-text {
   max-width: 1500px;
   margin: 0 auto;
@@ -151,11 +152,6 @@
     padding: 20px;
     border-radius: 60px;
   }
-}
-
-.framed-box:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* ====== SERVICES SECTION ====== */
@@ -235,15 +231,15 @@
 }
 
 /* ====== CLIENT TESTIMONIALS SECTION ====== */
-.accueil-avis {
-  background: linear-gradient(to right, #2c3e50, #3498db);
+.avis-clients {
+  background-color: #121212;
   padding: 80px 20px;
   text-align: center;
   color: white;
   margin-top: 4rem;
 }
 
-.accueil-avis h2 {
+.avis-clients h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #FFD700;
@@ -339,21 +335,6 @@
   }
 }
 
-/* ====== CLIENTS TESTIMONIALS DARK BACKGROUND ====== */
-.avis-clients {
-  background-color: #121212;
-  padding: 80px 20px;
-  text-align: center;
-  color: white;
-  margin-top: 4rem;
-}
-
-.avis-clients h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #FFD700;
-}
-
 /* ====== VIDEO BACKGROUND ====== */
 .video-background {
   position: absolute;
@@ -367,6 +348,32 @@
 
 @media (max-width: 768px) {
   .video-background {
-    height: 400px;
+    height: 50vh;
+  }
+}
+
+/* ====== EXTRA SMALL DEVICES ====== */
+@media (max-width: 480px) {
+  .accueil-description {
+    padding: 2rem 1rem;
+  }
+
+  .framed-text {
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+  }
+
+  .slider-fixed-overlay {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .slider-fixed-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .slider-fixed-overlay p {
+    font-size: 1rem;
   }
 }
