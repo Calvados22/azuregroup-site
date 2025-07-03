@@ -15,12 +15,12 @@
   margin: 0.5rem auto;
   overflow: hidden;
   animation: fadeIn 1s ease-in-out;
-  height: 90vh;
+  height: 840px;
 }
 
 @media (max-width: 768px) {
   .accueil-slider {
-    height: 50vh;
+    height: 400px;
   }
 }
 
@@ -48,13 +48,15 @@
   }
 }
 
-/* ====== SLIDER OVERLAY TEXT ====== */
+/* Overlay text on slider */
 .slider-fixed-overlay {
   position: relative;
   z-index: 1;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding-top: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 16px;
   width: 80%;
@@ -96,7 +98,6 @@
   .slider-fixed-overlay h1 {
     font-size: 3rem;
   }
-
   .slider-fixed-overlay p {
     font-size: 1.3rem;
   }
@@ -106,12 +107,24 @@
   .slider-fixed-overlay h1 {
     font-size: 3.5rem;
   }
-
   .slider-fixed-overlay p {
     font-size: 1.4rem;
   }
 }
+.accueil-description h1 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+  word-break: break-word;
+}
 
+@media (max-width: 480px) {
+  .accueil-description h1 {
+    font-size: 1.6rem;
+  }
+}
 /* ====== DESCRIPTION SECTION ====== */
 .accueil-description {
   padding: 4rem 1rem;
@@ -132,7 +145,6 @@
   }
 }
 
-/* FRAMED TEXT */
 .framed-text {
   max-width: 1500px;
   margin: 0 auto;
@@ -152,6 +164,11 @@
     padding: 20px;
     border-radius: 60px;
   }
+}
+
+.framed-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* ====== SERVICES SECTION ====== */
@@ -231,15 +248,15 @@
 }
 
 /* ====== CLIENT TESTIMONIALS SECTION ====== */
-.avis-clients {
-  background-color: #121212;
+.accueil-avis {
+  background: linear-gradient(to right, #2c3e50, #3498db);
   padding: 80px 20px;
   text-align: center;
   color: white;
   margin-top: 4rem;
 }
 
-.avis-clients h2 {
+.accueil-avis h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #FFD700;
@@ -308,14 +325,18 @@
 }
 
 .partner-logo {
+  height: auto;
+  max-height: 120px;
+  width: 100%;
+  max-width: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
 }
 
 .partner-logo img {
-  max-height: 150px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   transition: filter 0.3s ease;
 }
@@ -335,6 +356,21 @@
   }
 }
 
+/* ====== CLIENTS TESTIMONIALS DARK BACKGROUND ====== */
+.avis-clients {
+  background-color: #121212;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+}
+
+.avis-clients h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FFD700;
+}
+
 /* ====== VIDEO BACKGROUND ====== */
 .video-background {
   position: absolute;
@@ -348,32 +384,6 @@
 
 @media (max-width: 768px) {
   .video-background {
-    height: 50vh;
-  }
-}
-
-/* ====== EXTRA SMALL DEVICES ====== */
-@media (max-width: 480px) {
-  .accueil-description {
-    padding: 2rem 1rem;
-  }
-
-  .framed-text {
-    padding: 1.5rem;
-    font-size: 1rem;
-    border-radius: 50px;
-  }
-
-  .slider-fixed-overlay {
-    padding: 1rem;
-    width: 95%;
-  }
-
-  .slider-fixed-overlay h1 {
-    font-size: 1.5rem;
-  }
-
-  .slider-fixed-overlay p {
-    font-size: 1rem;
+    height: 400px;
   }
 }

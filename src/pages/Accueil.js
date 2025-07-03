@@ -62,25 +62,26 @@ const partenaires = [partner1, partner2, partner3, partner4, partner5, partner6,
 
 
       {/* About Section */}
-      <section className="accueil-description framed-text left-aligned" data-aos="fade-up">
-        <p><h1>Bienvenue chez AzureGroup:</h1>
-          Azure Group est un cabinet de conseil spécialisé dans la transformation digitale et la transition énergétique. Il accompagne les entreprises et institutions dans la conception et la mise en œuvre de solutions innovantes alliant technologie, durabilité et performance.
-        </p>
-        <p>
-          Ses domaines d’expertise couvrent :
-
-          ♻️les énergies renouvelables,
-
-          ♻️la cybersécurité physique,
-
-          ♻️les systèmes intelligents,
-
-          ♻️les solutions digitales sur mesure.
-        </p>
-        <p>
-          Azure Group opère sous la raison sociale Azure Networks Company International, société à dimension internationale dédiée au développement de projets à fort impact technologique et énergétique.
-        </p>
-      </section>
+<section className="accueil-description framed-text left-aligned" data-aos="fade-up">
+  <h1>Bienvenue chez AzureGroup:</h1>
+  <p>
+    Azure Group est un cabinet de conseil spécialisé dans la transformation digitale et la transition énergétique. Il accompagne les entreprises et institutions dans la conception et la mise en œuvre de solutions innovantes alliant technologie, durabilité et performance.
+  </p>
+  <p>
+    Ses domaines d’expertise couvrent :
+    <br />
+    ♻️ les énergies renouvelables,
+    <br />
+    ♻️ la cybersécurité physique,
+    <br />
+    ♻️ les systèmes intelligents,
+    <br />
+    ♻️ les solutions digitales sur mesure.
+  </p>
+  <p>
+    Azure Group opère sous la raison sociale Azure Networks Company International, société à dimension internationale dédiée au développement de projets à fort impact technologique et énergétique.
+  </p>
+</section>
 
       {/* Services Section */}
 <section className="accueil-services" data-aos="fade-up">
